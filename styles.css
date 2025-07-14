@@ -1,0 +1,20 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6; /* Light gray background */
+}
+/* Custom styles for card background colors based on similarity */
+/* These classes are no longer used for the main card background,
+   but are kept in case you want to re-introduce them or use for other elements. */
+.understood-bg { background-color: #d1fae5; } /* green-100 */
+.mid-level-bg { background-color: #fef3c7; } /* yellow-100 */
+.wtf-bg { background-color: #fee2e2; } /* red-100 */
+
+/* Transition for smooth color change (still applies to any element with .term-card if its background changes) */
+.term-card {
+    transition: background-color 0.5s ease-in-out;
+}
+
+/* Specific styles for feedback text */
+.feedback-excellent { color: #065f46; font-weight: 600; } /* green-800 */
+.feedback-partial { color: #92400e; font-weight: 600; } /* yellow-800 */
+.feedback-tryagain { color: #991b1b; font-weight: 600; } /* red-800 */
