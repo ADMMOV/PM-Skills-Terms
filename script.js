@@ -198,15 +198,15 @@ function createTermCard(termObj, index) {
         // Apply feedback based on similarity
         if (similarity >= 75) {
             feedbackEmojiSpan.textContent = '✅'; // Checkmark emoji
-            feedbackTextSpan.textContent = 'הבנה מעולה!';
+            feedbackTextSpan.textContent = ' סחטיין!';
             feedbackTextSpan.classList.add('feedback-excellent');
         } else if (similarity >= 40) {
             feedbackEmojiSpan.textContent = '🤔'; // Thinking face emoji
-            feedbackTextSpan.textContent = 'הבנה חלקית...';
+            feedbackTextSpan.textContent = 'פיפטי פיפטי';
             feedbackTextSpan.classList.add('feedback-partial');
         } else {
             feedbackEmojiSpan.textContent = '❌'; // Cross mark emoji
-            feedbackTextSpan.textContent = 'צריך ללמוד שוב!';
+            feedbackTextSpan.textContent = 'אתה לא בכיוון אחי';
             feedbackTextSpan.classList.add('feedback-tryagain');
         }
 
